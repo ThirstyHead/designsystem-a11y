@@ -1,0 +1,16 @@
+# Design System a11y
+
+This is a machine-readable design system based on the Design Tokens Specification (2025.10). It is designed to be consumed by agentic AI workflows to ensure consistent, accessible, and standards-compliant UI implementation.
+
+## Core Assets
+- [Design Tokens (JSON)](tokens.json): The single source of truth for all visual constants.
+- [Visual Documentation](index.html): Human-readable gallery of the tokens.
+
+## Token Naming Convention
+Tokens follow a semantic naming pattern:
+`--sys-[category]-[property]-[modifier]`
+
+Example: `--sys-color-bg-primary`
+
+## Accessibility Baseline
+All tokens are validated against WCAG 2.1 AA contrast requirements.

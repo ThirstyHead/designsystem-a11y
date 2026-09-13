@@ -1,0 +1,56 @@
+/* 
+ * Design Tokens
+ * Source: tokens.json
+ * Specification: DTS 2025.10
+ * 
+ * These variables are the single source of truth for the design system.
+ * Any changes to the visual identity should be made in tokens.json first.
+ */
+
+:root {
+  /* Color Palette (Primitives) - Light Mode */
+  --palette-linen: #F9F7F2;
+  --palette-charcoal: #2C2C2C;
+  --palette-oak-dark: #5D5244;
+  --palette-muted: #D1C7B7;
+
+  /* Semantic Colors - Light Mode */
+  --sys-color-bg-primary: var(--palette-linen);
+  --sys-color-bg-secondary: var(--palette-muted);
+  --sys-color-text-main: var(--palette-charcoal);
+  --sys-color-text-muted: var(--palette-muted);
+  --sys-color-text-on-accent: var(--palette-linen);
+  --sys-color-accent-primary: var(--palette-oak-dark);
+
+  /* Spacing */
+  --sys-space-xs: 0.25rem;
+  --sys-space-sm: 0.5rem;
+  --sys-space-md: 1rem;
+  --sys-space-lg: 2rem;
+  --sys-space-xl: 4rem;
+
+  /* Typography */
+  --sys-font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --sys-font-family-serif: Georgia, 'Times New Roman', Times, serif;
+  --sys-font-size-base: 1rem;
+  --sys-font-size-h1: 2.5rem;
+  --sys-font-size-h2: 2rem;
+  --sys-font-size-h3: 1.5rem;
+}
+
+/* Dark Mode Overrides */
+[data-theme=\"dark\"] {
+  /* Color Palette (Primitives) - Dark Mode */
+  --palette-deep-charcoal: #1A1A1A;
+  --palette-soft-cream: #E5E2DA;
+  --palette-pale-oak: #B5A695;
+  --palette-muted-dark: #3D3D3D;
+
+  /* Semantic Colors - Dark Mode */
+  --sys-color-bg-primary: var(--palette-deep-charcoal);
+  --sys-color-bg-secondary: var(--palette-muted-dark);
+  --sys-color-text-main: var(--palette-soft-cream);
+  --sys-color-text-muted: var(--palette-muted-dark);
+  --sys-color-text-on-accent: var(--palette-deep-charcoal);
+  --sys-color-accent-primary: var(--palette-pale-oak);
+}

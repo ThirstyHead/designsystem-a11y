@@ -1,0 +1,31 @@
+# Japandi A11y Design System
+
+A machine-readable, WCAG-compliant design system optimized for agentic AI and high accessibility.
+
+## Core Specification
+- **Token Standard**: Design Tokens Specification (DTS) 2025.10
+- **Source of Truth**: `/tokens.json`
+- **Primary Goal**: Provide a stable, accessible baseline for all `*-a11y` projects.
+
+## Token Map
+- **Colors**: Defined in `tokens.json` under `tokens.color.sys`.
+  - Backgrounds: `--sys-color-bg-primary`, `--sys-color-bg-surface`
+  - Text: `--sys-color-text-main`, `--sys-color-text-muted`
+  - Accents: `--sys-color-accent`
+- **Typography**: Defined in `tokens.json` under `tokens.typography`.
+  - Scale: `sm`, `base`, `md`, `lg`, `xl`
+  - Weights: `regular`, `medium`, `bold`
+- **Spacing**: Defined in `tokens.json` under `tokens.spacing`.
+  - Scale: `xs`, `sm`, `md`, `lg`, `xl` (Base: 0.5rem)
+
+## Implementation Guide for Agents
+1. Read `tokens.json` to get the exact hex values and dimensions.
+2. Use the semantic CSS variables (e.g., `--sys-color-bg-primary`) in your stylesheets.
+3. Ensure all color combinations maintain the contrast ratios specified in the token metadata.
+4. Follow the SMACSS architecture: Base -> Layout -> Module -> State.
+
+## Documentation
+- Overview: `/docs/index.html`
+- Colors: `/docs/colors.html`
+- Typography: `/docs/typography.html`
+- Spacing: `/docs/spacing.html`

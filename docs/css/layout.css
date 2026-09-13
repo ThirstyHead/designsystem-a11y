@@ -1,0 +1,45 @@
+/* 
+  SMACSS: Layout
+  Defines the structural containers and positioning of the site.
+*/
+
+.l-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--sys-space-lg);
+}
+
+.l-header {
+  padding: var(--sys-space-lg) 0;
+  border-bottom: 1px solid var(--sys-color-bg-surface);
+  margin-bottom: var(--sys-space-lg);
+}
+
+.l-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__links {
+  display: flex;
+  gap: var(--sys-space-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.l-footer {
+  margin-top: var(--sys-space-xl);
+  padding: var(--sys-space-lg) 0;
+  border-top: 1px solid var(--sys-color-bg-surface);
+  text-align: center;
+  font-size: var(--sys-font-size-sm);
+  color: var(--sys-color-text-muted);
+}
+
+.l-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--sys-space-md);
+}

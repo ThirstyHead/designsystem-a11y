@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography - Japandi A11y Design System</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/modules.css">
+</head>
+<body>
+  <header class="l-header">
+    <div class="l-container l-header__nav">
+      <h1>Japandi A11y</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="l-header__links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="typography.html" aria-current="page">Typography</a></li>
+          <li><a href="spacing.html">Spacing</a></li>
+          <li><button id="theme-toggle" class="mod-theme-toggle" aria-pressed="false">Toggle Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="l-container">
+    <section>
+      <h2>Typography</h2>
+      <p>Our typography system balances the warmth of a refined serif for headings with the clarity of a system sans-serif for body text.</p>
+      
+      <div class="mod-token-card" style="margin-bottom: var(--sys-space-lg);">
+        <h3>Type Scale</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--sys-space-sm);">
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">--sys-font-size-xl</span>
+            <span style="font-size: var(--sys-font-size-xl);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">--sys-font-size-lg</span>
+            <span style="font-size: var(--sys-font-size-lg);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">--sys-font-size-md</span>
+            <span style="font-size: var(--sys-font-size-md);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">--sys-font-size-base</span>
+            <span style="font-size: var(--sys-font-size-base);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">--sys-font-size-sm</span>
+            <span style="font-size: var(--sys-font-size-sm);">The quick brown fox...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-token-card">
+        <h3>Font Weights</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--sys-space-sm);">
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">Regular (400)</span>
+            <span style="font-weight: var(--sys-font-weight-regular);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">Medium (500)</span>
+            <span style="font-weight: var(--sys-font-weight-medium);">The quick brown fox...</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: var(--sys-space-md);">
+            <span class="mod-token-name" style="width: 120px;">Bold (700)</span>
+            <span style="font-weight: var(--sys-font-weight-bold);">The quick brown fox...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="l-footer l-container">
+    <p>&copy; 2026 Japandi A11y Design System. Built for accessibility.</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

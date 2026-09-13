@@ -18,7 +18,7 @@
   --sys-color-bg-primary: var(--palette-linen);
   --sys-color-bg-secondary: var(--palette-muted);
   --sys-color-text-main: var(--palette-charcoal);
-  --sys-color-text-muted: var(--palette-muted);
+  --sys-color-text-muted: var(--palette-oak-dark);
   --sys-color-text-on-accent: var(--palette-linen);
   --sys-color-accent-primary: var(--palette-oak-dark);
 
@@ -39,7 +39,7 @@
 }
 
 /* Dark Mode Overrides */
-[data-theme=\"dark\"] {
+[data-theme="dark"] {
   /* Color Palette (Primitives) - Dark Mode */
   --palette-deep-charcoal: #1A1A1A;
   --palette-soft-cream: #E5E2DA;
@@ -50,7 +50,7 @@
   --sys-color-bg-primary: var(--palette-deep-charcoal);
   --sys-color-bg-secondary: var(--palette-muted-dark);
   --sys-color-text-main: var(--palette-soft-cream);
-  --sys-color-text-muted: var(--palette-muted-dark);
+  --sys-color-text-muted: var(--palette-pale-oak);
   --sys-color-text-on-accent: var(--palette-deep-charcoal);
   --sys-color-accent-primary: var(--palette-pale-oak);
 }

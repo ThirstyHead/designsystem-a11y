@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spacing - Japandi A11y Design System</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/modules.css">
+</head>
+<body>
+  <header class="l-header">
+    <div class="l-container l-header__nav">
+      <h1>Japandi A11y</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="l-header__links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="spacing.html" aria-current="page">Spacing</a></li>
+          <li><button id="theme-toggle" class="mod-theme-toggle" aria-pressed="false">Toggle Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="l-container">
+    <section>
+      <h2>Spacing & Layout</h2>
+      <p>Our spacing system is based on a 0.5rem base unit, ensuring consistent vertical and horizontal rhythm.</p>
+      
+      <div class="l-grid">
+        <div class="mod-token-card">
+          <span class="mod-token-name">--sys-space-xs</span>
+          <div style="background-color: var(--sys-color-accent); height: var(--sys-space-xs); width: 100%; border-radius: 2px;"></div>
+          <span class="mod-token-value">0.5rem</span>
+        </div>
+        <div class="mod-token-card">
+          <span class="mod-token-name">--sys-space-sm</span>
+          <div style="background-color: var(--sys-color-accent); height: var(--sys-space-sm); width: 100%; border-radius: 2px;"></div>
+          <span class="mod-token-value">1rem</span>
+        </div>
+        <div class="mod-token-card">
+          <span class="mod-token-name">--sys-space-md</span>
+          <div style="background-color: var(--sys-color-accent); height: var(--sys-space-md); width: 100%; border-radius: 2px;"></div>
+          <span class="mod-token-value">2rem</span>
+        </div>
+        <div class="mod-token-card">
+          <span class="mod-token-name">--sys-space-lg</span>
+          <div style="background-color: var(--sys-color-accent); height: var(--sys-space-lg); width: 100%; border-radius: 2px;"></div>
+          <span class="mod-token-value">4rem</span>
+        </div>
+        <div class="mod-token-card">
+          <span class="mod-token-name">--sys-space-xl</span>
+          <div style="background-color: var(--sys-color-accent); height: var(--sys-space-xl); width: 100%; border-radius: 2px;"></div>
+          <span class="mod-token-value">8rem</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="l-footer l-container">
+    <p>&copy; 2026 Japandi A11y Design System. Built for accessibility.</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

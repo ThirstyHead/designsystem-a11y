@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Interface Protocol — Japandi A11y Design System</title>
+  <link rel="canonical" href="https://thirstyhead.com/designsystem-a11y/agentic-interface.html">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/modules.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="l-header">
+    <div class="l-container l-header__nav">
+      <div class="l-header__brand">
+        <strong>Japandi A11y</strong>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="l-header__links">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="colors.html" class="nav-link">Colors</a></li>
+          <li><a href="typography.html" class="nav-link">Typography</a></li>
+          <li><a href="spacing.html" class="nav-link">Spacing</a></li>
+          <li><a href="agentic-interface.html" class="nav-link" aria-current="page">Agentic Protocol</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="l-container">
+    <h1>Agentic Interface Protocol</h1>
+    <p class="lead">This document defines the standards for AI agents to programmatically consume, implement, and verify the Japandi A11y Design System.</p>
+
+    <section>
+      <h2>1. Token Consumption</h2>
+      <p>The system's source of truth is <code>tokens.json</code>. Agents should prioritize this file over CSS variables for logic and validation.</p>
+      <div class="mod-card">
+        <h3>Consumption Workflow</h3>
+        <ol>
+          <li><strong>Read</strong> <code>tokens.json</code> to identify the current version and palette.</li>
+          <li><strong>Map</strong> semantic tokens (e.g., <code>sys.text.main</code>) to their palette values (e.g., <code>#2C2C2C</code>).</li>
+          <li><strong>Apply</strong> these values using the corresponding CSS variables defined in <code>base.css</code>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Implementation Standards</h2>
+      <p>When generating new components or pages, agents must adhere to the following constraints:</p>
+      <ul>
+        <li><strong>Semantic HTML</strong>: Use landmarks (<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>) and proper heading hierarchies.</li>
+        <li><strong>Fluidity</strong>: Use <code>clamp()</code> for typography and <code>auto-fit</code> for grids to ensure intrinsic responsiveness.</li>
+        <li><strong>Contrast</strong>: All text must maintain a minimum contrast ratio of 4.5:1 (WCAG AA). Refer to the <code>contrast_ratio</code> property in <code>tokens.json</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Verification Protocol</h2>
+      <p>Before finalizing any output, agents should perform the following checks:</p>
+      <div class="mod-card">
+        <h3>A11y Checklist</h3>
+        <ul>
+          <li>[ ] Does every image have a descriptive <code>alt</code> attribute or <code>aria-hidden="true"</code>?</li>
+          <li>[ ] Is there a logical focus order for keyboard navigation?</li>
+          <li>[ ] Do all interactive elements have a visible <code>:focus-visible</code> state?</li>
+          <li>[ ] Is the <code>lang</code> attribute set on the <code>&lt;html&gt;</code> tag?</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="l-footer l-container">
+    <p>&copy; 2026 Japandi A11y Design System. Optimized for humans and agents.</p>
+  </footer>
+</body>
+</html>

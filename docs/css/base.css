@@ -95,3 +95,26 @@ button:focus-visible {
   outline: 3px solid var(--sys-color-accent);
   outline-offset: 2px;
 }
+
+/* ===================================================================
+   ACCESSIBLE SKIP LINK
+   WCAG 2.1 SC 2.4.1 (Bypass Blocks)
+   =================================================================== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--sys-color-bg-surface);
+  color: var(--sys-color-text-main);
+  text-align: center;
+  z-index: 100;
+  text-decoration: none;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+

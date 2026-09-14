@@ -70,4 +70,35 @@
   border-radius: var(--sys-radius-sm);
   cursor: pointer;
   font-size: var(--sys-font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sys-space-xs);
 }
+
+/* ===================================================================
+   ACCESSIBLE ICONOGRAPHY
+   WCAG 2.1 SC 1.1.1 (Non-text Content)
+   =================================================================== */
+.mod-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sys-space-xs);
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--sys-font-size-sm);
+  font-weight: var(--sys-font-weight-medium);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: var(--sys-color-accent);
+}
+
